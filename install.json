@@ -1,0 +1,13 @@
+{
+  "run": [
+    {
+      "method": "shell.run",
+      "params": {
+        "chain": true,
+        "message": [
+          "npm i -g clawdbot"
+        ]
+      }
+    }
+  ]
+}
