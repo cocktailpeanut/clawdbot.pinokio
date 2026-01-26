@@ -3,10 +3,13 @@ module.exports = {
     {
       "method": "shell.run",
       "params": {
-        "message": [
-          "clawdbot uninstall --all --yes",
-          "npm uninstall -g clawdbot"
-        ]
+        "message": "clawdbot uninstall --all --yes"
+      }
+    },
+    {
+      "method": "shell.run",
+      "params": {
+        "message": "npm uninstall -g clawdbot"
       }
     }
   ]
