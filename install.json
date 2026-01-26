@@ -1,5 +1,4 @@
 {
-  "daemon": true,
   "run": [
     {
       "method": "shell.run",
@@ -11,7 +10,7 @@
       "method": "shell.run",
       "params": {
         "input": true,
-        "message": "clawdbot onboard",
+        "message": "clawdbot onboard --skip-ui",
         "on": [{
           "event": "/.*onboarding complete.*/i",
           "kill": true
