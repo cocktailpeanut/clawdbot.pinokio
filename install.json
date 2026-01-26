@@ -16,6 +16,13 @@
           "kill": true
         }]
       }
+    },
+    {
+      "method": "modal",
+      "params": {
+        "title": "Onboarding Complete",
+        "description": "Now click the 'start' tab to get started"
+      }
     }
   ]
 }
