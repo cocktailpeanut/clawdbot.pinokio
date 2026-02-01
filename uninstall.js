@@ -3,13 +3,13 @@ module.exports = {
     {
       "method": "shell.run",
       "params": {
-        "message": "clawdbot uninstall --all --yes"
+        "message": "openclaw uninstall --all --yes"
       }
     },
     {
       "method": "shell.run",
       "params": {
-        "message": "npm uninstall -g clawdbot"
+        "message": "npm uninstall -g openclaw"
       }
     }
   ]
