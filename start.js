@@ -4,7 +4,7 @@ module.exports = {
       "method": "shell.run",
       "params": {
         "message": [
-          "clawdbot gateway run"
+          "openclaw gateway run"
         ],
         "on": [{
           "event": "/listening on.*ws:\\/\\/([0-9.:]+)/",
@@ -16,7 +16,7 @@ module.exports = {
       "method": "shell.run",
       "params": {
         "message": [
-          "clawdbot dashboard"
+          "openclaw dashboard"
         ],
         "on": [{
           "event": "/http:\\/\\/[^ ]+ /",

@@ -3,14 +3,14 @@
     {
       "method": "shell.run",
       "params": {
-        "message": "npm i -g clawdbot@latest"
+        "message": "npm i -g openclaw@latest"
       }
     },
     {
       "method": "shell.run",
       "params": {
         "input": true,
-        "message": "clawdbot onboard --skip-ui",
+        "message": "openclaw onboard --skip-ui",
         "on": [{
           "event": "/.*onboarding complete.*/i",
           "kill": true

@@ -9,7 +9,7 @@ module.exports = {
     {
       method: "shell.run",
       params: {
-        message: "npm i -g clawdbot@latest"
+        message: "npm i -g openclaw@latest"
       }
     }
   ]
