@@ -19,9 +19,15 @@ module.exports = {
           "openclaw dashboard"
         ],
         "on": [{
-          "event": "/http:\\/\\/[^ ]+ /",
+          "event": "/(http:\\/\\/\\S+)/",
           "done": true
         }]
+      }
+    },
+    {
+      "method": "local.set",
+      "params": {
+        "url": "{{input.event[1]}}"
       }
     }]
 }

@@ -1,7 +1,10 @@
 module.exports = {
   version: "5.0",
   menu: async (kernel, info) => {
-    return [{
+    let running = info.running("start.js")
+    let local = info.local("start.js")
+    let url = local && local.url
+    let items = [{
       icon: "fa-solid fa-plug",
       text: "Install",
       href: "install.json",
@@ -9,6 +12,7 @@ module.exports = {
       icon: "fa-solid fa-circle-play",
       text: "Start",
       href: "start.js",
+      default: running && !url
     }, {
       icon: "fa-solid fa-arrows-rotate",
       text: "Update",
@@ -18,5 +22,15 @@ module.exports = {
       text: "Uninstall",
       href: "uninstall.js",
     }]
+    if (url) {
+      items.push({
+        icon: "fa-solid fa-rocket",
+        text: "Open Web UI",
+        href: url,
+        target: "_blank",
+        default: true
+      })
+    }
+    return items
   }
 }
